@@ -78,8 +78,8 @@ python netra.py
 ## 🔮 Roadmap
 
 - [x] Basic OSINT modules
-- [ ] Email intelligence
-- [ ] PDF/JSON reports
+- [x] Email intelligence
+- [x] PDF/JSON reports
 - [ ] GUI version
 - [ ] Telegram/Discord bots
 
