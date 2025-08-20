@@ -1,0 +1,4 @@
+pyfiglet
+rich
+requests
+json
