@@ -87,3 +87,9 @@ python netra.py
 <p align="center">
   <b>Made with ❤️ by <a href="https://github.com/Kauravsrestha-Duryodhan">Duryodhan</a></b>
 </p>
+
+![Screenshot 1](assets/ss1.png)
+![Screenshot 2](assets/ss2.png)
+![Screenshot 3](assets/ss3.png)
+![Screenshot 4](assets/ss4.png)
+![Screenshot 5](assets/ss5.png)
