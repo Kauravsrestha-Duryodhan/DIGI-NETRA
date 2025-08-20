@@ -8,7 +8,7 @@ from .scrap import instauser
 from .scrap import gitinfo
 
 
-def load_sites_config(path="finalkit/murl.json"):
+def load_sites_config(path="main/murl.json"):
     with open(path, 'r') as f:
         return json.load(f)
 
@@ -77,3 +77,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
