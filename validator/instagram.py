@@ -3,7 +3,7 @@ import json
 
 def instafind(email):
     # Load config from external JSON
-    with open("finalkit/check.json", "r") as file:
+    with open("main/check.json", "r") as file:
         config = json.load(file)
 
     url = config["url"]
@@ -30,4 +30,5 @@ if __name__ == "__main__":
         print("✔️ Valid Mail")
         instafind(user_email)
     else:
+
         print("❌ Please Enter Valid Email")
