@@ -4,7 +4,6 @@ from main.ipcheck import check_ip_address
 from main.idcheck import instafind as id_instafind
 from pyfiglet import Figlet
 from rich import print
-from main.yt_comment import fetch_and_save_comments as comments
 from validator.emails import email_check
 from validator.firefox import firefox
 from validator.hudson import hudson
@@ -35,8 +34,7 @@ try:
         print("2. Information By Username")
         print("3. Information By Email")
         print("4. Information By IP")
-        print("5. Fetch YouTube Comments")
-        print("6. Exit")
+        print("5. Exit")
         options = input("Enter Your Choice: ").strip()
         if options == "1": 
             query = input("🔤 Enter your query (Phone Number): ").strip()
@@ -65,9 +63,6 @@ try:
         elif options == "4":
             check_ip_address()
         elif options == "5":
-            video_url = input("Enter YouTube video URL: ").strip()
-            comments(video_url)
-        elif options == "6":
             print("Thank you for using DIGI-NETRA. Goodbye!")    
             break
         else:
