@@ -33,8 +33,9 @@
   - Cross-platform scan for footprints
 - **IP Address Analysis**
   - Geolocation, ISP lookup
-- **Email Reconnaissance** *(Coming Soon)*
-
+- **Email Reconnaissance** 
+  - check emails, data breaches, pastes, and social media presence.
+  
 ---
 
 ## ⚡ Quick Start
