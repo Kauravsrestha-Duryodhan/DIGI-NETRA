@@ -1,0 +1,1917 @@
+{
+    "Ebay": {
+    "url": "https://ebay.com/usr/{username}",
+    "detect_based_on_message": false,
+    "not_found_status_codes": [404],
+    "not_found_message": "",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 1,
+    "needs_login": false,
+    "custom_error_handling": false,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.95
+  },
+    "Facebook": {
+    "url": "https://www.facebook.com/{username}",
+    "detect_based_on_message": false,
+    "not_found_status_codes": [404],
+    "not_found_message": "This content isn't available at the moment",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": true,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "GitHub": {
+    "url": "https://github.com/{username}",
+    "detect_based_on_message": false,
+    "not_found_status_codes": [406],
+    "not_found_message": "",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 1,
+    "needs_login": false,
+    "custom_error_handling": false,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.95
+
+  },
+  "Instagram": {
+    "url": "https://www.instagram.com/{username}",
+    "detect_based_on_message": false,
+    "not_found_status_codes": [404],
+    "not_found_message": "",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": true,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.9
+  },
+  "Reddit": {
+    "url": "https://www.reddit.com/user/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [],
+    "not_found_message": "This user does not exist",
+    "found_message": "Trophy Case",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 1,
+    "needs_login": false,
+    "custom_error_handling": false,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.9
+  },
+  "Twitter": {
+    "url": "https://twitter.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "This account doesn’t exist",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": true,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.9
+  },
+  "Pinterest": {
+    "url": "https://www.pinterest.com/{username}/",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "show_error=true",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "YouTube": {
+    "url": "https://www.youtube.com/@{username}",
+    "detect_based_on_message": false,
+    "not_found_status_codes": [404],
+    "not_found_message": "This channel does not exist",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "LeetCode": {
+    "url": "https://leetcode.com/{username}/",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "404 Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.9
+  },
+  "Medium": {
+    "url": "https://medium.com/@{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "PAGE NOT FOUND\n404",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "HackerRank": {
+    "url": "https://www.hackerrank.com/{username}",
+    "detect_based_on_message": false,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page not found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "TryHackMe": {
+    "url": "https://tryhackme.com/p/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "not-found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Fiverr": {
+    "url": "https://www.fiverr.com/{username}",
+    "detect_based_on_message": false,
+    "not_found_status_codes": [404],
+    "not_found_message": "We can't find that page",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Spotify": {
+    "url": "https://open.spotify.com/user/{username}",
+    "detect_based_on_message": false,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page not found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": true,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.75
+  },
+  "SoundCloud": {
+    "url": "https://soundcloud.com/{username}",
+    "detect_based_on_message": false,
+    "not_found_status_codes": [404],
+    "not_found_message": "We can’t find that user.",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.8
+  },
+  "Steam": {
+    "url": "https://steamcommunity.com/id/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "The specified profile could not be found.",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.8
+  },
+  "Unsplash": {
+   "url": "https://unsplash.com/@{username}",
+   "detect_based_on_message": true,
+   "not_found_status_codes": [],
+   "not_found_message": "the page you were looking for doesn’t seem to exist anymore",
+   "found_message": "",
+   "request_method": "GET",
+   "headers": {
+     "User-Agent": "Mozilla/5.0"
+   },
+   "timeout_seconds": 5,
+   "rate_limit_delay": 2,
+   "needs_login": false,
+   "custom_error_handling": true,
+   "redirect_behavior": "follow",
+   "confidence_score": 0.9
+  },
+  "Bitbucket": {
+    "url": "https://bitbucket.org/{username}/",
+    "detect_based_on_message": false,
+    "not_found_status_codes": [404],
+    "not_found_message": "We can’t find that page",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+    "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.8
+  },
+ "Imgur": {
+  "url": "https://imgur.com/user/{username}",
+  "detect_based_on_message": true,
+  "not_found_status_codes": [],
+  "not_found_message": "The page you’re looking for is not found",
+  "found_message": "",
+  "request_method": "GET",
+  "headers": {
+    "User-Agent": "Mozilla/5.0"
+  },
+  "timeout_seconds": 5,
+  "rate_limit_delay": 2,
+  "needs_login": false,
+  "custom_error_handling": true,
+  "redirect_behavior": "follow",
+  "confidence_score": 0.8
+  },
+  "Chess.com": {
+    "url": "https://www.chess.com/member/{username}",
+    "detect_based_on_message": false,
+    "not_found_status_codes": [404],
+    "not_found_message": "This page doesn't exist.",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+    "Roblox": {
+    "url": "https://www.roblox.com/user.aspx?username={username}",
+    "detect_based_on_message": false,
+    "not_found_status_codes": [404],
+    "not_found_message": "This page doesn't exist.",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+    },
+    "Kaggle": {
+    "url": "https://www.kaggle.com/{username}",
+    "detect_based_on_message": false,
+    "not_found_status_codes": [404],
+    "not_found_message": "This page doesn't exist.",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Behance": {
+    "url": "https://www.behance.net/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Oops! We can’t find that page.",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "DeviantArt": {
+    "url": "https://www.deviantart.com/{username}",
+    "detect_based_on_message": false,
+    "not_found_status_codes": [404],
+    "not_found_message": "This page doesn't exist.",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Dribbble": {
+    "url": "https://dribbble.com/{username}",
+    "detect_based_on_message": false,
+    "not_found_status_codes": [404],
+    "not_found_message": "This page doesn't exist.",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Replit": {
+    "url": "https://replit.com/@{username}",
+    "detect_based_on_message": false,
+    "not_found_status_codes": [404],
+    "not_found_message": "This page doesn't exist.",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Codeforces": {
+    "url": "https://codeforces.com/profile/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Can't find such user",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+    
+  
+  "Quora": {
+    "url": "https://www.quora.com/profile/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+ 
+  "Product Hunt": {
+    "url": "https://www.producthunt.com/@{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+ 
+  "Twitch": {
+    "url": "https://www.twitch.tv/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Snapchat": {
+    "url": "https://www.snapchat.com/add/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Ko-fi": {
+    "url": "https://ko-fi.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "BuyMeACoffee": {
+    "url": "https://www.buymeacoffee.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+
+
+
+  "Codepen": {
+    "url": "https://codepen.io/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Koo": {
+    "url": "https://www.kooapp.com/profile/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "ShareChat": {
+    "url": "https://sharechat.com/profile/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes":[404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Vimeo": {
+    "url": "https://vimeo.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Dailymotion": {
+    "url": "https://www.dailymotion.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Issuu": {
+    "url": "https://issuu.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Slideshare": {
+    "url": "https://www.slideshare.net/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "GitLab": {
+    "url": "https://gitlab.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Flickr": {
+    "url": "https://www.flickr.com/people/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "500px": {
+    "url": "https://500px.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "About.me": {
+    "url": "https://about.me/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "AngelList": {
+    "url": "https://angel.co/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Academia.edu": {
+    "url": "https://www.academia.edu/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "ResearchGate": {
+    "url": "https://www.researchgate.net/profile/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Crunchbase": {
+    "url": "https://www.crunchbase.com/person/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Archive.org": {
+    "url": "https://archive.org/details/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Gravatar": {
+    "url": "https://en.gravatar.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+ 
+
+  "Myspace": {
+    "url": "https://myspace.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+
+  "Foursquare": {
+    "url": "https://foursquare.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "TripAdvisor": {
+    "url": "https://www.tripadvisor.com/members/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Xing": {
+    "url": "https://www.xing.com/profile/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "TED": {
+    "url": "https://www.ted.com/profiles/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Instructables": {
+    "url": "https://www.instructables.com/member/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Skillshare": {
+    "url": "https://www.skillshare.com/user/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Udemy": {
+    "url": "https://www.udemy.com/user/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Hashnode": {
+    "url": "https://hashnode.com/@{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "DEV.to": {
+    "url": "https://dev.to/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Peerlist": {
+    "url": "https://peerlist.io/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Codewars": {
+    "url": "https://www.codewars.com/users/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Codementor": {
+    "url": "https://www.codementor.io/@{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "ReverbNation": {
+    "url": "https://www.reverbnation.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Patreon": {
+    "url": "https://www.patreon.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Scribd": {
+    "url": "https://scribd.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "4shared": {
+    "url": "https://4shared.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Gravatar (alt)": {
+    "url": "https://gravatar.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Bloglovin": {
+    "url": "https://bloglovin.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Buzzfeed": {
+    "url": "https://buzzfeed.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "LiveJournal": {
+    "url": "https://livejournal.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Flickr (alt)": {
+    "url": "https://flickr.com/people/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Mediafire": {
+    "url": "https://mediafire.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "SourceForge": {
+    "url": "https://sourceforge.net/u/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "ThemeForest": {
+    "url": "https://themeforest.net/user/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Angelfire": {
+    "url": "https://angelfire.lycos.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "AddThis": {
+    "url": "https://addthis.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Instructables (alt)": {
+    "url": "https://instructables.com/member/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Kickstarter": {
+    "url": "https://kickstarter.com/profile/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "SBNation": {
+    "url": "https://sbnation.com/users/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Last.fm": {
+    "url": "https://last.fm/user/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "LiveInternet": {
+    "url": "https://liveinternet.ru/users/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Mixcloud": {
+    "url": "https://mixcloud.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Photobucket": {
+    "url": "https://photobucket.com/user/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Answers.com": {
+    "url": "https://answers.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Pixabay": {
+    "url": "https://pixabay.com/users/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Pixabay (alias)": {
+    "url": "https://pixabay.com/en/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Evernote": {
+    "url": "https://evernote.com/u/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Disqus": {
+    "url": "https://disqus.com/by/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "HubPages": {
+    "url": "https://hubpages.com/@{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Path": {
+    "url": "https://path.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Couchsurfing": {
+    "url": "https://couchsurfing.com/people/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Twoo": {
+    "url": "https://twoo.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Viber": {
+    "url": "https://viber.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes":[404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Hi5": {
+    "url": "https://hi5.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes":[404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Friendster": {
+    "url": "https://friendster.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Wikidot": {
+    "url": "https://wikidot.com/user:{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes":[404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Scribbled": {
+    "url": "https://scribbled.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes":[404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "StumbleUpon": {
+    "url": "https://stumbleupon.com/stumbler/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes":[404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "CNET": {
+    "url": "https://cnet.com/users/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Clutch": {
+    "url": "https://clutch.co/profile/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Taringa": {
+    "url": "https://taringa.net/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Houzz": {
+    "url": "https://houzz.com/user/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Edmodo": {
+    "url": "https://edmodo.com/user/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Mix": {
+    "url": "https://mix.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Gab": {
+    "url": "https://gab.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Bandcamp (alt)": {
+    "url": "https://bandcamp.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Audiomack": {
+    "url": "https://audiomack.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Mind": {
+    "url": "https://mind.com/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Drupal": {
+    "url": "https://drupal.org/u/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Docker Hub": {
+    "url": "https://hub.docker.com/u/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  },
+  "Tableau Public": {
+    "url": "https://public.tableau.com/profile/{username}",
+    "detect_based_on_message": true,
+    "not_found_status_codes": [404],
+    "not_found_message": "Page Not Found",
+    "found_message": "",
+    "request_method": "GET",
+    "headers": {
+      "User-Agent": "Mozilla/5.0"
+    },
+    "timeout_seconds": 5,
+    "rate_limit_delay": 2,
+    "needs_login": false,
+    "custom_error_handling": true,
+    "redirect_behavior": "follow",
+    "confidence_score": 0.85
+  }
+}
