@@ -62,18 +62,7 @@ python netra.py
 
 ---
 
-## 🗂️ Structure
 
-| File            | Purpose                       |
-|-----------------|------------------------------|
-| DIGI-NETRA.py   | Main launcher                |
-| Numbercheck.py  | Phone OSINT                  |
-| username.py     | Username scanner             |
-| ipcheck.py      | IP tracking                  |
-| idcheck.py      | Instagram info               |
-| scrap.py        | Data scraping                |
-
----
 
 ## 🔮 Roadmap
 
