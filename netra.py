@@ -36,7 +36,7 @@ try:
         print("5. Exit")
         options = input("Enter Your Choice: ").strip()
         if options == "1": 
-            print("[magenta]Enter username to search[/magenta]: ")
+            print("[magenta]Enter Phone Number to search[/magenta]: ")
             query = int(input())
             search_google(query)
             print("\n" + "="*50 + "\n")
