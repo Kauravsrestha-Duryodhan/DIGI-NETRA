@@ -47,7 +47,7 @@ try:
         elif options == "2":
             check_username()
         elif options == "3":
-            print("[magenta]Enter Username to search[/magenta]: ",end="")
+            print("[magenta]Enter Email to search[/magenta]: ",end="")
             email = input()
             print(f"\n[bold blue]Checking Email: {email}[/bold blue]")
             print("[bold cyan]Only Registered Data Will Be Provided...[/bold cyan]\n")
