@@ -1,5 +1,6 @@
 import requests
 import json
+from rich import print
 def instafind(query):
     url = "https://www.instagram.com/api/v1/web/accounts/account_recovery_send_ajax/"
     headers = {
@@ -15,12 +16,13 @@ def instafind(query):
         "email_or_username": query
     }
     response = requests.post(url, headers=headers, data=data)
-    print("\n🔃 Checking Account On Instagram\n")
-    print(" If Status = ❌ fail Then Your Account is In Trouble or Account Did Not Exists \n If Status = ✅ ok Then Account Exists")
+    print("\n[green][CHECK][/green] Checking Account On Instagram\n")
+    print(" [red]If Status = [FAIL] fail Then Your Account is In Trouble or Account Did Not Exists \n If Status = [OK] ok Then Account Exists[/red]")
     try:
         data = response.json()
-        with open("insta.json", "w", encoding="utf-8") as file:
+        with open("Data/instagram_information.json", "w", encoding="utf-8") as file:
             json.dump(data, file, ensure_ascii=False, indent=4)
-        print("👁️  Account Status :" , data.get("status"))
+        print("[yellow]Instagram Information.json Saved in Data Folder[/yellow]")
+        print("[LOOK]  Account Status :" , data.get("status"))
     except:
-         print("🤦‍♂️🤦   Account Did Not Exists or Unable To Retrive Data")
+         print("[NOT FOUND]   Account Did Not Exists or Unable To Retrive Data")

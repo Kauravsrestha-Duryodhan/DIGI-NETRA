@@ -1,6 +1,7 @@
 import requests
 import json
 import time
+from rich import print
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from .instaemailfind import instafind as infind
 from .scrap import chess
@@ -8,7 +9,7 @@ from .scrap import instauser
 from .scrap import gitinfo
 
 
-def load_sites_config(path="main/murl.json"):
+def load_sites_config(path="finalkit/murl.json"):
     with open(path, 'r') as f:
         return json.load(f)
 
@@ -48,7 +49,8 @@ def check_username_on_site(username, site_name, site_config):
         
 
 def main():
-    username = input("🔍 Enter username to search: ")
+    print("[magenta]Enter username to search[/magenta]: ", end="")
+    username = input().strip()
     sites = load_sites_config()
 
     with ThreadPoolExecutor(max_workers=10) as executor:
@@ -64,7 +66,7 @@ def main():
             elif result is False:
                 pass  # Not found
             if site_name.lower() == "instagram":
-                print("[ 🔍 ] Running Instagram email lookup...\n")
+                print("[magenta][+][/magenta] Running Instagram email lookup...\n")
                 infind(username)
                 instauser(username)
             elif site_name.lower() == "chess.com":
@@ -77,4 +79,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

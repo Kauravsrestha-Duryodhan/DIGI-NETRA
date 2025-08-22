@@ -1,6 +1,7 @@
 import requests
 import json
 import re 
+from rich import print
 from bs4 import BeautifulSoup
 def chess(username):
     
@@ -12,13 +13,13 @@ def chess(username):
         
         soup = BeautifulSoup(response.text, 'html.parser')
         profilehead=soup.find("div", class_="profile-header-details-item").text.strip()
-        print("✔️  Joined On Chess:- ",profilehead)
+        print("[>>]  Joined On Chess:- ",profilehead)
         name=soup.find("div", class_="profile-card-name").text.strip()
         
         plocation=soup.find("div", class_="profile-card-location").text.strip()
-        print("✔️  Joined On Chess: ",profilehead)
-        print("👤 Profile Name    : ",name)
-        print("📍 User Location   : ", plocation)
+        print("[magenta][>>][/magenta]  Joined On Chess: ",profilehead)
+        print("[magenta][>>][/magenta] Profile Name    : ",name)
+        print("[magenta][>>][/magenta] User Location   : ", plocation)
     except:
         print("Check Your Internet Or Unable To Extract Data")
     
@@ -77,8 +78,9 @@ def instauser(username):
 
     data = response.json()
 
-    with open("instadata.json", "w", encoding="utf-8") as file:
+    with open("Data/instagramprofile_information.json", "w", encoding="utf-8") as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
+        print("[yellow]Instagramprofile_Information.json Saved in Data Folder[/yellow]")
 
     try:
         bio = data["data"]["user"]["biography"]
@@ -91,21 +93,21 @@ def instauser(username):
         linked = data["data"]["user"]["biography_with_entities"]["entities"]
         hashtags = [e["hashtag"] for e in linked if e["hashtag"]]
         users = [e["user"] for e in linked if e["user"]]
-        print("📍 Bio Of A Profile   : ", bio)
-        print("📛 Fullname           : ", fullname)
-        print("🧑 Profile Pic URL    : ", purl)
-        print("🙏 Following          : ", fcount)
-        print("👍 Follwers           : ",followcount)
-        print("📝 Posts              : ", mcount)
-        print("🪪 User ID            : ", uid)
-        print("📌 Hashtags:")
+        print("[magenta][>>][/magenta] Bio Of A Profile   : ", bio)
+        print("[magenta][>>][/magenta] Fullname           : ", fullname)
+        print("[magenta][>>][/magenta] Profile Pic URL    : ", purl)
+        print("[magenta][>>][/magenta] Following          : ", fcount)
+        print("[magenta][>>][/magenta] Follwers           : ",followcount)
+        print("[magenta][>>][/magenta] Posts              : ", mcount)
+        print("[magenta][>>][/magenta] User ID            : ", uid)
+        print("[magenta][>>][/magenta] Hashtags:")
         for i, h in enumerate(hashtags, 1):
                 print(f"{i}. #{h['name']} (ID: {h['id']})")
-        print("👤 Users:")
+        print("[magenta][>>][/magenta] Users:")
         for i, u in enumerate(users, 1):
             print(f"{i}. @{u['username']} (ID: {u['id']})")
     except Exception as e:
-        print("❌ Failed to parse profile data:", e)
+        print("[-] Failed to parse profile data:", e)
     
 def gitinfo(username):
     url = f"https://github.com/{username}"
@@ -116,41 +118,41 @@ def gitinfo(username):
         print("\n=== GitHub Profile Information ===\n")
         try:
             profilebio = soup.find("div", class_="p-note user-profile-bio mb-3 js-user-profile-bio f4").div.text.strip()
-            print("🪪 Bio        :", profilebio)
+            print("[magenta][>>][/magenta] Bio        :", profilebio)
         except:
-            print("Bio        : Not found")
+            print("[red][--][/red]Bio        : Not found")
         try:
             org = soup.find("span", class_="p-org").div.text.strip()
-            print("🏢 Org        :", org)
+            print("[magenta][>>][/magenta] Org        :", org)
         except:
-            print("Org        : Not found")
+            print("[red][--][/red]Org        : Not found")
         try:
             country = soup.find("span", class_="p-label").text.strip()
-            print("🚩 Country    :", country)
+            print("[magenta][>>][/magenta] Country    :", country)
         except:
-            print("Country    : Not found")
+            print("[red][--][/red]Country    : Not found")
         try:
             links = [a['href'] for a in soup.find_all("a", class_="Link--primary") if a.has_attr('href')]
-            print("\n🔗 Links:")
+            print("\n[magenta][>>][/magenta] Links:")
             for i , links in enumerate(links,1):
                 print(f"[{i}] {links}")
         except:
-            print("Links      : Not found")
+            print("[red][--][/red]Links      : Not found")
         try:
             prname = soup.find("span", class_="p-name").text.strip()
-            print("📛 Full Name  :", prname)
+            print("[magenta][>>][/magenta] Full Name  :", prname)
         except:
-            print("Full Name  : Not found")
+            print("[red][--][/red]Full Name  : Not found")
         try:
             uname = soup.find("span", class_="vcard-username").text.strip()
-            print("👤 Username   :", uname)
+            print("[magenta][>>][/magenta] Username   :", uname)
         except:
-            print("Username   : Not found")
+            print("[red][--][/red]Username   : Not found")
         try:
             msg = soup.find("div", class_="user-status-message-wrapper").div.text.strip()
-            print("👍 Status     :", msg)
+            print("[magenta][>>][/magenta] Status     :", msg)
         except:
-            print("Status     : Not found")
+            print("[red][--][/red]Status     : Not found")
         try:
             follow = [span.text.strip() for span in soup.find_all("span", class_="text-bold")]
             if len(follow) >= 2:
@@ -160,13 +162,13 @@ def gitinfo(username):
                 for i, count in enumerate(follow, 1):
                  print(f"  Count {i}: {count}")
         except:
-            print("Follow     : Not found")
+            print("[red][--][/red]Follow     : Not found")
         try:
             pimg = soup.find("img", class_="avatar")['src']
-            print("❤️ Avatar URL :", pimg)
+            print("[magenta][>>][/magenta] Avatar URL :", pimg, "\n")
         except:
-            print("Avatar URL : Not found")
+            print("[<?>] Avatar URL : Not found\n")
 
     except Exception as e:
-        print("❌ Unable to extract:", str(e))
+        print("[!] Unable to extract:", str(e))
 

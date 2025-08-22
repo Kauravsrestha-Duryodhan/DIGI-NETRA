@@ -1,4 +1,5 @@
 import requests
+from rich import print
 import json
 def instafind(username):
     url = "https://www.instagram.com/api/v1/web/accounts/account_recovery_send_ajax/"
@@ -17,4 +18,4 @@ def instafind(username):
     response = requests.post(url, headers=headers, data=data)
     data = json.loads(response.text)
     email = data.get("contact_point")
-    print(f"❤️❤️ Your Instagram Account Email is :- {email}")
+    print(f"[bold pink][+] Your Instagram Account Email is[/bold pink] :- {email}")
