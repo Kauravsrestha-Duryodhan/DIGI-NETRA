@@ -1,5 +1,7 @@
 import requests
 import random
+from rich import print
+
 from bs4 import BeautifulSoup
 
 

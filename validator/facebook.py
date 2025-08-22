@@ -1,4 +1,5 @@
 import requests
+from rich import print
 def facebook():
     url = 'https://www.facebook.com/ajax/login/help/identify.php?'
     email = input("Enter Your Email:- ")

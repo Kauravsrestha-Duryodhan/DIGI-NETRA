@@ -97,10 +97,20 @@ def email_check(email):
                 thumbnail = gravatar_info.get("thumbnailUrl")
                 display_name = gravatar_info.get("displayName")
 
-                print("\n👤 Username:", username)
-                print("🔗 Profile URL:", profile_url)
-                print("🖼️ Thumbnail:", thumbnail)
-                print("🪪 Display Name:", display_name)
+                print("\n[pink][USER][/pink] Username:", username)
+                print("[pink][LINK][/pink] Profile URL:", profile_url)
+                print("[pink][IMAGE][/pink] Thumbnail:", thumbnail)
+                print("[pink][NAME][/pink] Display Name:", display_name)
                 print("\n")
         except Exception:
             pass
+
+        
+
+    try:
+        file_path = "Data/email_information.json"
+        with open(file_path, "w", encoding="utf-8") as f:
+            json.dump(results, f, indent=2, ensure_ascii=False)
+        print(f"[bold green][+] Results saved to {file_path}[/bold green]")
+    except Exception as e:
+        print(f"[bold red][-] Failed to save results <_> {e}[/bold red]")

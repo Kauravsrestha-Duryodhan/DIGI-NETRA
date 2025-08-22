@@ -1,4 +1,6 @@
 import requests
+from rich import print
+
 def hudson(email):
     api = "https://cavalier.hudsonrock.com/api/json/v2/osint-tools/search-by-email"
 

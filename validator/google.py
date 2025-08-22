@@ -1,5 +1,7 @@
 import requests
 import re
+from rich import print
+
 
 url = 'https://accounts.google.com/v3/signin/_/AccountsSignInUi/data/batchexecute'
 email = input("Enter Your Email:- ")

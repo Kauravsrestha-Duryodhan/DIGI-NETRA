@@ -1,5 +1,5 @@
 import requests
-
+from rich import print
 def firefox(email):
     try:
         response = requests.post(
@@ -7,14 +7,14 @@ def firefox(email):
             data={"email": email},
             timeout=10
         )
-        print("😒 Checking On Firefox.......... ")
+        print("[green][CHECK][/green] Checking On Firefox.......... ")
         if "false" in response.text:
-            print("❌ Firefox: Not registered")
+            print("[-] Firefox: Not registered")
         elif "true" in response.text:
-            print("✔️ Firefox: Registered")
+            print("[+] Firefox: Registered")
         else:
-            print("⚠️ Firefox: Unknown (Possible Rate Limit)")
+            print("[!] Firefox: Unknown (Possible Rate Limit)")
 
     except requests.RequestException as e:
-        print(f"firefox: error ({e})")
+        print(f"[!] Firefox: error ({e})")
 

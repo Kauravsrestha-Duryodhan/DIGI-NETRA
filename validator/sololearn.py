@@ -1,5 +1,7 @@
 import requests
 import json
+from rich import print
+
 email = input("Enter your email: ")
 url = 'https://api2.sololearn.com/v2/authentication/user'
 headers = {
