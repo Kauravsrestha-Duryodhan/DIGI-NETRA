@@ -23,6 +23,6 @@ def instafind(query):
         with open("Data/instagram_information.json", "w", encoding="utf-8") as file:
             json.dump(data, file, ensure_ascii=False, indent=4)
         print("[yellow]Instagram Information.json Saved in Data Folder[/yellow]")
-        print("[LOOK]  Account Status :" , data.get("status"))
+        print("[LOOK]  Account Status :" , data.get("status"),"\n")
     except:
-         print("[NOT FOUND]   Account Did Not Exists or Unable To Retrive Data")
+         print("[NOT FOUND]   Account Did Not Exists or Unable To Retrive Data\n")
