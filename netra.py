@@ -1,7 +1,7 @@
-from finalkit.Numbercheck import search_google, validate_phone_number, look, WhatsappInfo
-from finalkit.username import main as check_username
-from finalkit.ipcheck import check_ip_address
-from finalkit.idcheck import instafind as id_instafind
+from main.Numbercheck import search_google, validate_phone_number, look, WhatsappInfo
+from main.username import main as check_username
+from main.ipcheck import check_ip_address
+from main.idcheck import instafind as id_instafind
 from pyfiglet import Figlet
 from rich import print
 from validator.emails import email_check
@@ -70,3 +70,4 @@ try:
             print("Invalid Input Please Enter Valid Input")
 except (KeyboardInterrupt, EOFError):
     print("\n[bold yellow]Exiting gracefully. Thank you for using DIGI-NETRA.[/bold yellow]")
+
