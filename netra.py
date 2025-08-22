@@ -1,7 +1,7 @@
-from main.Numbercheck import search_google, validate_phone_number, look, WhatsappInfo
-from main.username import main as check_username
-from main.ipcheck import check_ip_address
-from main.idcheck import instafind as id_instafind
+from finalkit.Numbercheck import search_google, validate_phone_number, look, WhatsappInfo
+from finalkit.username import main as check_username
+from finalkit.ipcheck import check_ip_address
+from finalkit.idcheck import instafind as id_instafind
 from pyfiglet import Figlet
 from rich import print
 from validator.emails import email_check
@@ -16,9 +16,8 @@ ascii_art = f.renderText('DIGI-NETRA')
 welcome_banner = """
 [bold cyan]    ✦━─━────༺༻────━─━✦
      Welcome to DIGI-NETRA
-     Created By : [bold magenta]Duryodhan[/bold magenta]
-     GitHub      : [bold magenta]Kauravsrestha-Duryodhan[/bold magenta]
-     Version    : 0.01
+     Created By : [bold magenta]@Kauravsresth-Duryodhan[/bold magenta]
+     Version    : 0.1
     ✦━─━────༺༻────━─━✦[/bold cyan]
 """
 print(f"[bold magenta]{ascii_art}[/bold magenta]")
@@ -37,7 +36,8 @@ try:
         print("5. Exit")
         options = input("Enter Your Choice: ").strip()
         if options == "1": 
-            query = input("🔤 Enter your query (Phone Number): ").strip()
+            print("[magenta]Enter username to search[/magenta]: ")
+            query = int(input())
             search_google(query)
             print("\n" + "="*50 + "\n")
             validate_phone_number(query)
@@ -47,18 +47,19 @@ try:
         elif options == "2":
             check_username()
         elif options == "3":
-            email = input("💌 Enter Your Email :- ").strip()
-            print(f"\n[bold blue]Checking Email: {email}[/bold blue]\n")
+            print("[magenta]Enter username to search[/magenta]: ",end="")
+            email = input()
+            print(f"\n[bold blue]Checking Email: {email}[/bold blue]")
             print("[bold cyan]Only Registered Data Will Be Provided...[/bold cyan]\n")
             email_check(email) 
             
-            print("\n[bold yellow]Checking On Firefox....[/bold yellow]\n")
+            print("\n[bold yellow]Checking On Firefox....[/bold yellow]")
             firefox(email)
-            print("\n[bold yellow]Checking On Breach Data....[/bold yellow]\n")
+            print("\n[bold yellow]Checking On Breach Data....[/bold yellow]")
             hudson(email)
-            print("\n[bold yellow]Checking On PASTEBIN....[/bold yellow]\n")
+            print("\n[bold yellow]Checking On PASTEBIN....[/bold yellow]")
             paste(email)
-            print("\n[bold yellow]Checking On Instagram....[/bold yellow]\n")
+            print("\n[bold yellow]Checking On Instagram....[/bold yellow]")
             validator_instafind(email)
         elif options == "4":
             check_ip_address()
