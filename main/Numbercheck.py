@@ -90,7 +90,7 @@ def WhatsappInfo(query):
             print("Failed to Retrive Data:", str(e))
 
 if __name__ == "__main__":
-    print("[magenta]Enter username to search[/magenta]: ")
+    print("[magenta]Enter username to search[/magenta]: ", end="")
     query = int(input())
     search_google(query)
     print("\n" + "="*50 + "\n")
@@ -98,3 +98,4 @@ if __name__ == "__main__":
     look(query)
     WhatsappInfo(query)
     instafind(query)
+
