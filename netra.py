@@ -36,7 +36,7 @@ try:
         print("5. Exit")
         options = input("Enter Your Choice: ").strip()
         if options == "1": 
-            print("[magenta]Enter Phone Number to search[/magenta]: ")
+            print("[magenta]Enter Phone Number to search[/magenta]: ",end="")
             query = int(input())
             search_google(query)
             print("\n" + "="*50 + "\n")
@@ -47,7 +47,7 @@ try:
         elif options == "2":
             check_username()
         elif options == "3":
-            print("[magenta]Enter username to search[/magenta]: ",end="")
+            print("[magenta]Enter Username to search[/magenta]: ",end="")
             email = input()
             print(f"\n[bold blue]Checking Email: {email}[/bold blue]")
             print("[bold cyan]Only Registered Data Will Be Provided...[/bold cyan]\n")
