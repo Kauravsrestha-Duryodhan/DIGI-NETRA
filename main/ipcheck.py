@@ -5,7 +5,7 @@ def check_ip_address():
     try:
         print("[magenta]Enter IP Address to search[/magenta]: ", end="")
         IP_ADD = input()
-        API_KEY = "f55a0ed4d998cee256cf603954cda0bc"
+        API_KEY = "7695903ca38b47708d680f13c87cee10"
         url = f"https://api.ipstack.com/{IP_ADD}?access_key={API_KEY}"
         response = requests.get(url)
         data = response.json()
